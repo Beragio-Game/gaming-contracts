@@ -108,7 +108,7 @@ contract RandomizerRouter is Access, IRandomizerRouter {
     requestIds++;
   }
 
-  /// @notice requests immeadiate random number(s)
+  /// @notice requests immediate random number(s)
   /// @param _count random number count
   /// @param _minConfirmations min confirmation count that rng should wait till
   function request(uint32 _count, uint256 _minConfirmations) external onlyConsumer returns (uint256 requestId_) {
@@ -118,6 +118,7 @@ contract RandomizerRouter is Access, IRandomizerRouter {
     requestId_ = _addRequest(provider_, _count, 0, _minConfirmations);
 
     emit RequestCreated(requestId_, _msgSender(), address(provider_), _count);
+    
   }
 
   /// @notice requests scheduled random number(s)
