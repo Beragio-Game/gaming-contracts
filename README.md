@@ -1,10 +1,5 @@
 
-# JUSTBET Smart Contracts
-
-
-
-
-![Logo](https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https%3A%2F%2F4219139108-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FI2YAbOppW8IDGc3JCLjA%252Ficon%252F5W3X7fZ7VRgo4LaNcKCt%252Faa.jpg%3Falt%3Dmedia%26token%3D0ebba770-a2f2-4475-9c08-a8287da51351)
+# Beragio Games Smart Contracts
 
 # Core Contracts
 
@@ -174,12 +169,3 @@ Wheel is a game where players place bets on a spinning wheel with 24 gray slots,
 
 
 
-
-
-
-
-## More
-
- - [Games Documentation](https://docs.just.bet/justbet/betting/games)
- - [Let's try games](https://beta.just.bet)
- - [WINR Protocol](https://docs.winr.games/)
