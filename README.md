@@ -1,4 +1,7 @@
 
+
+# Beragio Games Smart Contracts
+
 ### Core
 The Core contract serves as a foundational contract that provides shared functionality for other contracts in the system. It is imported by both Solo and Multiplayer games, with Solo games importing it via Common.sol.
 
@@ -161,11 +164,6 @@ In the game of Limbo, players make a wager and select a multiplier for it. A ran
 #### Wheel
 
 Wheel is a game where players place bets on a spinning wheel with 24 gray slots, 16 blue slots, 8 green slots, and 1 red slot. The outcome of the game is determined by where the wheel stops.
-
-
-
-
-
 
 
 

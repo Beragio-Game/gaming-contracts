@@ -13,10 +13,9 @@ contract PythProvider is Access {
     mapping(uint256 => uint256) public routerRequestIds;
 
     mapping(uint256 => uint32) public counts; 
-    constructor(address _entropy, address _provider) {
+    constructor(address _entropy) {
     _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
     changeEntropy(_entropy);
-    changeProvider(_provider);
 
    
     
@@ -28,11 +27,7 @@ contract PythProvider is Access {
   }
     function changeEntropy(address _entropy) public onlyGovernance {
      entropy = IEntropy(_entropy);
-    grantRole(RANDOMIZER_ROLE, address(_randomizer));
-  }
-    function changeProvider(address _provider) public onlyGovernance {
-    provider = _provider;
-
+    grantRole(RANDOMIZER_ROLE, address(_entropy));
   }
    
   function request(bytes32 userCommitment) external payable {
