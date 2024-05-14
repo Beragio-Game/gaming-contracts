@@ -30,10 +30,10 @@ async function main() {
 
 
    //Random Number Provider Contract
-   PythProvider
+   //PythProvider
    const PythProvider = await hre.ethers.getContractFactory("PythProvider");
    //Need to provide the entropy address and a construftor argument. 
-   const pythProvider = await PythProvider.deploy('0xgvhuouhjghjiohujgvbkiohb');
+   const pythProvider = await PythProvider.deploy('0xE129236aAf50E8890a3eaad082FF37232bAB37b2');
 
    await pythProvider.deployed();
 
@@ -43,7 +43,7 @@ async function main() {
    //Single Player Games Contract:
    //1. Coin Flip:
    const CoinFlip = await hre.ethers.getContractFactory("CoinFlip");
-   const coinFlip = await CoinFlip.deploy();
+   const coinFlip = await CoinFlip.deploy(randomizerRouter.address);
 
    await coinFlip.deployed();
 
