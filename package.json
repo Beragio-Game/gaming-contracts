@@ -1,5 +1,5 @@
 {
-  "name": "justbet-contracts",
+  "name": "beragio-games",
   "version": "0.1.0",
   "scripts": {
     "build": "hardhat clean && hardhat compile",
